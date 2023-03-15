@@ -1,0 +1,105 @@
+/* ----------awards----------------------------------- */
+.awards{
+    margin-top: 90px;
+    display: flex;
+  /* Make a flex container multiline */
+  flex-wrap: wrap;
+  /* Set gap between rows and columns */
+  gap: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.award__card {
+    width: 200px;
+    font-family: var(--secondary-font-family);
+    flex-basis: calc((100% - 50px) / 2);
+}
+
+.award__icon {
+    position: relative;
+    padding: 0;
+    width: 140px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.award__icon li{
+    margin: 0;
+    font-family: var(--primary-font-family);
+    display: block;
+}
+
+.award__title {
+    margin-top: 22px;
+font-weight: 700;
+font-size: 21px;
+/* line-height: 1.25; */
+color: var(--secondary-color);
+}
+
+.awards__text {
+    margin-top: 15px;
+font-weight: 40;
+font-size: 21px;
+/* line-height: 1.25; */
+color: var(--secondary-color);
+}
+
+.left__lavr{
+    position: absolute;
+    margin: 0;
+    left: 0px;
+}
+
+.rigth__lavr{
+    margin: 0;
+    position: absolute;
+    right: 0px;
+}
+
+.award__icon>li:nth-child(1) {
+font-style: italic;
+font-weight: 700;
+font-size: 13px;
+/* line-height: 1.25; */
+}
+
+.award__icon>li:nth-child(2) {
+font-weight: 700;
+font-size: 23px;
+line-height: 1.25;
+}
+
+.award__icon>li:nth-child(3) {
+font-weight: 700;
+font-size: 13px;
+/* line-height: 1.25; */
+}
+
+@media screen and (min-width: 1170px) {
+.awards{
+    margin-top: 120px;
+}
+
+.award__card {
+    width: 250px;
+    padding-bottom: 120px;
+}
+
+.award__card {
+  width: 225px;
+  flex-basis: calc((100% - 75px) / 4);
+}
+
+.award__title {
+    margin-top: 42px;
+}
+
+.awards__text {
+    margin-top: 21px;
+}
+}

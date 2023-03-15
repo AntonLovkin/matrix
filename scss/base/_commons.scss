@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {  
+    overflow-x: hidden;
+    font-family: "Merriweather", "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 1.25;
+    color: var(--secondary-color);
+    background-color: var(--container-color);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.margin-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    // width: 480px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
+}

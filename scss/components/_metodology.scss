@@ -1,0 +1,87 @@
+/* ----------course metodology--------------------- */
+.metodology{
+    padding-bottom: 20px; 
+}
+
+.metodology__title {
+font-weight: 400;
+font-size: 32px;
+/* line-height: 1.25; */
+}
+
+.metodology__list{
+    margin-top: 42px;
+    padding: 0;
+}
+
+.metodology__item{
+font-family: var(--secondary-font-family);
+font-weight: 400;
+font-size: 20px;
+/* line-height: 1.25; */
+margin-bottom: 25px;
+}
+
+.metodology__item:last-child{
+    margin-bottom: 0;
+}
+
+.metodology__item {
+  display: inline-flex;
+  align-items: flex-start;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.metodology__item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  padding-right: 24px;
+  margin-right: 23px;
+  background-size: cover;
+}
+
+/* Adds a icon in front of the li text */
+.metodology__item:nth-child(1)::before {
+  background-image: url(../../images/sr-city.svg);
+}
+.metodology__item:nth-child(2)::before {
+  background-image: url(../../images/sr-book.svg);
+}
+.metodology__item:nth-child(3)::before {
+  background-image: url(../../images/sr-sendchat-v1.svg);
+}
+.metodology__item:nth-child(4)::before {
+  background-image: url(../../images/sr-live.svg);
+}
+
+@media screen and (min-width: 1170px) {
+.metodology{
+    position: relative;
+    padding-top: 132px;
+    padding-left: 587px;
+    padding-bottom: 120px;
+}
+
+.metodology__title {
+font-size: 47px;
+}
+
+.metodology__list{
+    margin-top: 62px;
+}
+
+.metodology__item{
+margin-bottom: 40px;
+}
+
+.bg__image {
+    position: absolute;
+    top: 127px;
+    left: 0;
+    width: 430px;
+    height: 570px;
+    background-image: url(../../images/metodology_img.jpg);
+}
+}

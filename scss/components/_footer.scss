@@ -1,0 +1,155 @@
+/* ------------footer---------------- */
+footer {
+background: #252525;
+}
+
+.footer{
+padding: 40px 0;
+}
+
+address {
+    text-align: center;
+    font-family: var(--secondary-font-family);
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+
+color: var(--container-color);
+}
+
+.social__list{
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social__list li {
+    margin-bottom: 5px;
+}
+
+.social__list li > a {
+font-family: var(--secondary-font-family);
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+color: var(--container-color);
+text-decoration: none;
+}
+
+.contacts{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: var(--secondary-font-family);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: var(--container-color);
+}
+
+.contacts + li {
+    text-align: center;
+}
+
+.contacts a {
+display: block;
+margin-top: 20px;
+font-family: var(--secondary-font-family);
+font-weight: 400;
+font-size: 22px;
+text-decoration-line: underline;
+color: var(--container-color);
+}
+
+.lastline{
+padding: 40px 0;
+height: 118px;
+border-top:  1px solid #424242;;
+background: #252525;
+}
+
+.lastline p {
+    display: none;
+}
+
+.lastline > img {
+    display: none;
+}
+
+.lastline__logo{
+margin-left: auto;
+margin-right: auto;
+}
+
+@media screen and (min-width: 1170px) {
+
+footer {
+margin-left: auto;
+margin-right: auto;
+}
+
+.footer{
+margin-left: auto;
+margin-right: auto;
+width: 1170px;
+display: flex;
+padding-top: 80px;
+height: 248px;
+}
+
+address {
+    width: 222px;
+    margin-right: 70px;
+    text-align: start;
+}
+
+.social__list{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+.social__list li {
+    width: 202px;
+    margin-right: 230px;
+}
+
+.contacts{
+    padding: 0;
+    margin: 0 0 42px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 450px;
+}
+
+.contacts a {
+    margin-top: 0;
+}
+
+.lastline{
+margin-left: auto;
+margin-right: auto;
+width: 1170px;
+padding: 40px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 118px;
+}
+
+.lastline p {
+    display: block;
+font-family: var(--secondary-font-family);
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+color: #808080;
+}
+
+.lastline > img {
+    display: block;
+    width: 44px;
+    height: 25px;
+}
+}

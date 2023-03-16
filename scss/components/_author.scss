@@ -1,4 +1,13 @@
 /* -------author--------------------------------------- */
+.authors__section {
+    @media screen and (min-width: 1170px) {
+        position: absolute;
+        top: 328px;
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 
 .button__join {
     display: block;
@@ -12,21 +21,22 @@ box-shadow: 0px 10px 30px rgba(255, 111, 65, 0.5);
 font-family: var(--secondary-font-family);
 font-weight: 600;
 font-size: 19px;
-/* line-height: 1.25; */
 color: var(--container-color);
 /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
 
-// .button__join:hover,
-// .button__join:focus {
-// color: var(--secondary-color);
-// background-color: var(--container-color);
-// border: 2px solid var(--primary-color);
-// }
+@media screen and (min-width: 1170px) {
+    margin-top: 60px;
+}
+}
 
 .author {
     padding-top: 58px;
     display: flex;
+
+      @media screen and (min-width: 1170px) {
+    flex-direction: column;
+    padding-top: 0;
+}
 }
 
 .author img {
@@ -37,6 +47,10 @@ color: var(--container-color);
 .author__info {
     margin-left: 61px;
     font-family: var(--secondary-font-family);
+
+  @media screen and (min-width: 1170px) {
+    margin-left: 0;
+}
 }
 
 .text__about-author{
@@ -49,29 +63,6 @@ color: var(--container-color);
 font-family: var(--secondary-font-family);
 font-weight: 600;
 font-size: 19px;
-/* line-height: 1.25; */
 text-decoration-line: underline;
 color: var(--secondary-color);
-}
-
-@media screen and (min-width: 1170px) {
-    .authors__section {
-        position: absolute;
-        display: flex;
-        flex-direction: column-reverse;
-        top: 328px;
-    }
-
-.button__join {
-margin-top: 60px;
-}
-
-.author {
-    flex-direction: column;
-    padding-top: 0;
-}
-
-.author__info {
-    margin-left: 0;
-}
 }

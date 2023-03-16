@@ -3,27 +3,32 @@
 .button {
     width: 291px;
     height: 50px;
+
     padding: 12px 30px;
+
     border: none;
     border-radius: 50%;
     background-color: var(--primary-color);
-    font-family: Roboto;
     color: var(--container-color);
+    font-family: Roboto;
     cursor: pointer;
-}
 
-.button:hover,
-.button:focus {
-color: var(--secondary-color);
-background-color: var(--container-color);
-border: 2px solid var(--primary-color);
+  &:hover,
+  &:focus {
+    border: 2px solid var(--primary-color);
+    background-color: var(--container-color);
+    color: var(--secondary-color);
 }
-
+}
 /* -----------------HEADER--------------------- */
 
 .header {
     position: relative;
     padding-top: 15px;
+
+@media screen and (min-width: 1170px) {
+    padding-top: 37px;
+}
 }
 
 .header .container {
@@ -31,28 +36,31 @@ border: 2px solid var(--primary-color);
     justify-content: space-between;
 }
 
-@media screen and (min-width: 1170px) {
-.header {
-    padding-top: 37px;
-}
-}
-
 .logo__img{
-margin-top: 6px;
-width:134px;
-height: auto;
-}
+  width:134px;
+  height: auto;
+
+  margin-top: 6px;
 
 @media screen and (min-width: 1170px) {
-.logo__img {
+  width:160px;
+  height: auto;
+
   margin-top: 0;
   margin-right: 134px;
-  width:160px;
-height: auto;
-}}
+ }
+}
 
 .nav {
     background-color: #fff; 
+
+@media screen and (min-width: 1170px) {
+
+    position: static;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+ }
 }
 
 .nav__list {
@@ -60,33 +68,58 @@ height: auto;
     right: 50px;
     top: 0;
     visibility: hidden;
+
+ @media screen and (min-width: 1170px) {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    visibility: visible;
+
+    padding: 0;
+    margin: 0;
+}
 }
 
 .nav__item a {
-font-family: Roboto;
-font-weight: 400;
-font-size: 19px;
-line-height: 0.95;
-color: var(--nav-text-color);
-margin-right: 25px;
-text-decoration: none;
-}
+    margin-right: 25px;
 
-.nav__item a:hover {
-color: var(--primary-color);
-cursor: pointer;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 0.95;
+    color: var(--nav-text-color);
+
+&:hover {
+   color: var(--primary-color);
+ }
 }
 
 .nav__link {
     display: none;
     margin-left: 200px;
+
+@media screen and (min-width: 1170px) {
+    display: block;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 0.95;
+    text-align: right;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+}
 }
 
 .nav__button {
-    padding: 0;
-    margin: 0;
     width: 42px;
     height: 42px;
+
+    padding: 0;
+    margin: 0;
+
+@media screen and (min-width: 1170px) {
+    display: none; 
+}
 }
 
 .nav__button img {
@@ -94,30 +127,36 @@ cursor: pointer;
     margin-right: auto;
 }
 
+/* ------------mobile-menu------------- */
+
 .nav__list-mobile {
     display: none;
 }
 
-/* ------------mobile-menu------------- */
 @media screen and (max-width: 480px){
+
 .active{
     transform: rotate(180deg);
 }
+
 .is-visible {
-opacity: 0;
-visibility: hidden;
+   opacity: 0;
+   visibility: hidden;
 }
+
 .nav__list-mobile {
+    position: absolute;
+    top: 75px;
+    left: 0;
     display: block;
     z-index: 2;
-    position: absolute;
-top: 75px;
-left: 0;
-width: 100%;
-margin: 0;
-padding: 40px 175px;
-background-color: var(--container-color);
-box-shadow: 0px 10px 30px rgba(57, 57, 54, 0.5);
+    width: 100%;
+
+    margin: 0;
+    padding: 40px 175px;
+
+    background-color: var(--container-color);
+    box-shadow: 0px 10px 30px rgba(57, 57, 54, 0.5);
 }
 
 .nav__item-mobile {
@@ -131,43 +170,9 @@ font-size: 22px;
 line-height: 1.25;
 color: var(--nav-text-color);
 text-decoration: none;
-}
 
-.nav__item-mobile a:hover {
-color: var(--primary-color);
-cursor: pointer;
-}
-}
-
-@media screen and (min-width: 1170px) {
-.nav {
-    position: static;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-.nav__list {
-    position: static;
-    display: flex;
-    justify-content: space-between;
-    visibility: visible;
-    /* list-style: none; */
-    padding: 0;
-    margin: 0;
-}
-
-.nav__button {
-    display: none; 
-}
-
-.nav__link {
-    display: block;
-    font-family: Roboto;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 0.95;
-    text-align: right;
-    text-decoration-line: underline;
-    color: var(--primary-color);
+&:hover {
+  color: var(--primary-color);
+ }
 }
 }

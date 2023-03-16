@@ -3,6 +3,7 @@
 .button__join-course{
 width: 291px;
 height: 50px;
+
 background-color: var(--primary-color);
 box-shadow: 0px 10px 30px rgba(255, 111, 65, 0.5);
 border-radius: 200px;
@@ -10,24 +11,41 @@ border-radius: 200px;
 font-family: var(--secondary-font-family);
 font-weight: 600;
 font-size: 19px;
-/* line-height: 1.25; */
 color: var(--container-color);
-/* margin-left: auto;
-margin-right: auto; */
 }
 
-.program{
+.program {
    padding-top: 48px;
    padding-bottom: 50px;
-    /* outline: 2px solid black; */
+
+@media screen and (min-width: 1170px) {
+   padding-top: 130px;
+   padding-bottom: 0;
+}
 }
 
 .program__discription{
     width: 100%;
+
 font-weight: 400;
 font-size: 32px;
-/* line-height: 1.25; */
+
+@media screen and (min-width: 1170px) {
+    width: 830px;
+
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 1.25;
 }
+}
+
+.program__container {
+@media screen and (min-width: 1170px) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 70px;
+    justify-content: flex-end;
+}}
 
 .program__card{
     display: none;
@@ -36,35 +54,66 @@ font-size: 32px;
 .program__list{
     display: flex;
     flex-wrap: wrap;
-   gap: 10px;
+    gap: 10px;
 
     margin: 0;
     padding: 0;
     margin-top: 27px;
-    /* padding-top: 27px; */
-    /* padding-top: 50px; */
-    /* height: 168px; */
+
+@media screen and (min-width: 1170px) {
+    height: 168px;
+
+    display: block;
+
+    padding-top: 50px;
+    margin-left: 85px; 
+}
+}
+
+.program__list-item {
+ @media screen and (min-width: 1170px) {
+
+    padding-top: 4px;
+    padding-left: 27px;
+    border-left: 2px solid var(--secondary-text-color);
+    cursor: pointer;
+
+&:not(:last-child) {
+    margin-bottom: 46px;
+}
+
+&:hover{
+    color: var(--secondary-color);
+    background-color: var(--container-color);
+    border-left: 2px solid var(--primary-color);
+}
+
+&:hover h3{
+    color: var(--primary-color);
+}
+}
 }
 
 @media screen and (max-width: 480px) {
 .program__list-item {
-     border: 1px solid #000000;
-    border-radius: 200px;
     width: 139px;
-    height: 39px;
+    height: 39px;   
 
     padding-left: 25px;
     padding-top: 4px;
+
+    border: 1px solid #000000;
+    border-radius: 200px;
+    cursor: pointer;
 }
 
-.program__list-item:hover h3{
+// .program__list-item:hover h3{
+//     background-color: var(--primary-color);
+//     color: var(--container-color);
+// }
+.program__list-item:hover {
     background-color: var(--primary-color);
     color: var(--container-color);
-}
-.program__list-item:hover{
-    color: var(--container-color);
-    background-color: var(--primary-color);
-    cursor: pointer;
 }
 }
 
@@ -73,10 +122,22 @@ border-radius: 200px;
 font-family: var(--secondary-font-family);
 font-weight: 400;
 font-size: 20px;
+
+@media screen and (min-width: 1170px) {
+   font-size: 22px;
+}
 }
 
 .program__text {
     display: none;
+
+@media screen and (min-width: 1170px) {
+
+    display: block;
+font-weight: 700;
+font-size: 22px;
+line-height: 1.50;
+}
 }
 
 /* -----card-------------- */
@@ -91,13 +152,20 @@ font-size: 20px;
     height: 639px;
     padding: 50px 32px 55px 32px;
     background-color: rgba(57, 57, 54, 0.03);
+
+ @media screen and (min-width: 1170px) {
+    width: 586px;
+    height: 639px;
+
+    margin-top:0;
+    padding: 50px 60px 0 64px;
 }
 
-.program__card img {
+& img {
     margin-bottom: 30px;
 }
 
-.program__card p {
+& p {
     font-family: var(--secondary-font-family);
 font-weight: 400;
 font-size: 22px;
@@ -105,157 +173,30 @@ line-height: 1.25;
 color: var(--secondary-text-color);
 }
 
-.program__card h4 {
+& h4 {
 font-weight: 700;
 font-size: 22px;
 line-height: 1.50;
 }
 
-.program__card ul {
+& ul {
     padding:30px 0 ;
     border-top: 1px solid #000000;
     margin-top: 30px;
     margin-bottom: 0;
 }
 
-.program__card ul > li {
+& ul > li {
     font-family: var(--secondary-font-family);
 font-size: 22px;
 line-height: 1.25;
 }
 
-.program__card ul > li:first-child {
+& ul > li:first-child {
 margin-bottom: 30px;
 }
 
-.program__card ul > li > span{
+& ul > li > span{
 font-weight: 700;
 }
-
-@media screen and (min-width: 1170px) {
-.program{
-   padding-top: 130px;
-   /* padding-bottom: 75px; */
-   padding-bottom: 0;
-    /* outline: 2px solid black; */
-}
-.program__discription{
-    width: 830px;
-font-weight: 400;
-font-size: 57px;
-line-height: 1.25;
-}
-
-.program__container{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 70px;
-    justify-content: flex-end;
-}
-
-.program__list{
-    padding-top: 73px;
-    margin-left: 85px;
-}
-
-.program__list-item:not(:last-child) {
-    margin-bottom: 46px;
-} 
-
-.program__list{
-    display: block;
-    padding-top: 50px;
-    height: 168px;
-}
-
-.program__list-item {
-    padding-top: 4px;
-    padding-left: 27px;
-    border-left: 2px solid var(--secondary-text-color);
-}
-
-.program__list-item:not(:last-child) {
-    margin-bottom: 26px;
-}
-
-.program__list-item:hover h3{
-    color: var(--primary-color);
-}
-
-.program__list-item:hover{
-    color: var(--secondary-color);
-    background-color: var(--container-color);
-    border-left: 2px solid var(--primary-color);
-}
-
-.program__num {
-font-size: 22px;
-}
-
-.program__text {
-    display: block;
-font-weight: 700;
-font-size: 22px;
-line-height: 1.50;
-}
-
-/* -----card-------------- */
-
-.program__card {
-    margin-top:0;
-    width: 586px;
-    height: 639px;
-    padding: 50px 60px 0 64px;
-}
-
-/* .is-active {
-  display: block;
-}
-
-.program__card {
-    margin-top:0;
-    width: 586px;
-    height: 639px;
-    padding: 50px 60px 0 64px;
-    background-color: rgba(57, 57, 54, 0.03);
-}
-
-.program__card img {
-    margin-bottom: 30px;
-}
-
-.program__card p {
-    font-family: var(--secondary-font-family);
-font-weight: 400;
-font-size: 22px;
-line-height: 1.25;
-color: var(--secondary-text-color);
-}
-
-.program__card h4 {
-font-weight: 700;
-font-size: 22px;
-line-height: 1.50;
-}
-
-.program__card ul {
-    padding:30px 0 ;
-    border-top: 1px solid #000000;
-    margin-top: 30px;
-    margin-bottom: 0;
-}
-
-.program__card ul > li {
-    font-family: var(--secondary-font-family);
-font-size: 22px;
-line-height: 1.25;
-}
-
-.program__card ul > li:first-child {
-margin-bottom: 30px;
-}
-
-.program__card ul > li > span{
-font-weight: 700;
-} */
 }

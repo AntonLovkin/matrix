@@ -87,7 +87,7 @@ color: var(--secondary-color);
 
     margin-top: 38px;
     padding-top: 35px;
-    
+
     background-image: url(../../images/back_img_desktop.jpg);
     background-size: cover;
     background-position-x: center;
@@ -102,13 +102,11 @@ color: var(--secondary-color);
 }
 }
 
-.button__invite {
-    width: 156px;
-    height: 156px;
-
-    display: block;
+.button__invite img {
+    display: block;  
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto; 
+    cursor: pointer;
 }
 
 .text__info{

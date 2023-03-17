@@ -12,8 +12,10 @@
   --form-background-color: rgba(57, 57, 54, 0.03);
   --form-input-text-color: #9C9C9A;
   --box-shadow: 0px 10px 30px rgba(255, 111, 65, 0.5);
+  --icon-color: #9d9d98;
 }
 
+/* for course invitation */
 html {
   box-sizing: border-box;
 }
@@ -320,11 +322,14 @@ img {
   }
 }
 
-.button__invite img {
+.circle_button {
+  width: 156px;
+  height: 156px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  fill: var(--primary-color);
 }
 
 .text__info {
@@ -840,14 +845,19 @@ img {
 
 .list {
   display: inline-flex;
-  margin: 5px 0 0 0;
+  gap: 7px;
+  margin-top: 5px;
   padding: 0;
+}
+
+.list li:nth-last-child(-n+3) svg {
+  fill: var(--primary-color);
 }
 
 .list-item {
   width: 24px;
   height: 24px;
-  margin-right: 7px;
+  fill: var(--icon-color);
 }
 
 /* ------------form---------------- */

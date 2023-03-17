@@ -102,11 +102,24 @@ color: var(--secondary-color);
 }
 }
 
-.button__invite img {
-    display: block;  
+// .button__invite img {
+//     display: block;  
+//     margin-left: auto;
+//     margin-right: auto; 
+//     cursor: pointer;
+// }
+
+.circle_button {
+    width: 156px;
+    height: 156px;
+
+    display: block; 
+
     margin-left: auto;
     margin-right: auto; 
     cursor: pointer;
+
+    fill: var(--primary-color);
 }
 
 .text__info{

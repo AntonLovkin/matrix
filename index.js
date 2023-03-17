@@ -17,6 +17,13 @@ controls.addEventListener('click', (evt) => {
     const moduleId = evt.target.parentNode.getAttribute("href").slice(1);
     const nextActiveModule = document.querySelector(`#${moduleId}`);
     nextActiveModule.classList.add("is-active");
+
+    const prevListItem = document.querySelector(".program__list-item.is-active");
+    if (prevListItem) {
+        prevListItem.classList.remove("is-active");
+    } 
+    const nextListItem = evt.target.parentNode;
+    nextListItem.classList.add("is-active");
 }
 );
 

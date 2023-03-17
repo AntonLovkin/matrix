@@ -85,15 +85,14 @@ font-size: 32px;
     margin-bottom: 46px;
 }
 
-&:hover{
-    color: var(--secondary-color);
+&.is-active {
     background-color: var(--container-color);
     border-left: 2px solid var(--primary-color);
 }
-
-&:hover h3{
+&.is-active h3{
     color: var(--primary-color);
 }
+
 }
 }
 
@@ -114,6 +113,7 @@ font-size: 32px;
 //     background-color: var(--primary-color);
 //     color: var(--container-color);
 // }
+
 .program__list-item:hover {
     background-color: var(--primary-color);
     color: var(--container-color);
@@ -161,6 +161,7 @@ line-height: 1.50;
     padding: 50px 32px 55px 32px;
 
     background-color: rgba(57, 57, 54, 0.03);
+    border-top: 2px solid var(--primary-color);
 
  @media screen and (min-width: 1170px) {
     width: 586px;

@@ -583,12 +583,11 @@ img {
   .program__list-item:not(:last-child) {
     margin-bottom: 46px;
   }
-  .program__list-item:hover {
-    color: var(--secondary-color);
+  .program__list-item.is-active {
     background-color: var(--container-color);
     border-left: 2px solid var(--primary-color);
   }
-  .program__list-item:hover h3 {
+  .program__list-item.is-active h3 {
     color: var(--primary-color);
   }
 }
@@ -647,6 +646,7 @@ img {
   margin-top: 32px;
   padding: 50px 32px 55px 32px;
   background-color: rgba(57, 57, 54, 0.03);
+  border-top: 2px solid var(--primary-color);
 }
 @media screen and (min-width: 1170px) {
   .program__card {
@@ -854,12 +854,15 @@ img {
   display: flex;
   flex-direction: column;
   padding: 71px 0 0 0;
+  margin-top: 70px;
   background: var(--form-background-color);
+  border-top: 2px solid var(--primary-color);
 }
 @media screen and (min-width: 1170px) {
   .form {
     width: 585px;
     padding: 71px 90px 0 90px;
+    margin-top: 0;
   }
 }
 

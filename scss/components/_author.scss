@@ -1,5 +1,8 @@
 /* -------author--------------------------------------- */
 .authors__section {
+
+    max-width: 480px;
+
     @media screen and (min-width: 1170px) {
         position: absolute;
         top: 328px;
@@ -45,7 +48,7 @@ color: var(--container-color);
 }
 
 .author__info {
-    margin-left: 61px;
+    margin-left: auto;
     font-family: var(--secondary-font-family);
 
   @media screen and (min-width: 1170px) {

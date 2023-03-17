@@ -20,10 +20,9 @@ font-size: 20px;
 color: var(--secondary-color);
 
 @media screen and (min-width: 1170px) {
-display: inline-flex;
-align-items: center;
-width: 153px;
-margin-right: 121px;
+// width: 153px;
+
+// margin-right: 121px;
 }
 
 
@@ -44,6 +43,22 @@ margin-right: 121px;
     padding-right: 2px;
    }
  }
+
+ &::after {
+  @media screen and (min-width: 1170px) {
+    content: '';
+
+    width: 67px;
+    height: 27px;
+
+    margin-left: 18px;
+    margin-right: 38px;
+
+    background-image: url(../../images/arrow.svg);
+    background-size: contain;
+   }
+ }
+ 
 }
 
 .text__header {

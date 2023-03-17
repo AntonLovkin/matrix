@@ -32,14 +32,9 @@ img {
   display: block;
 }
 
-.margin-reset {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.link {
-  text-decoration: none;
-}
+// .link {
+//   text-decoration: none;
+// }
 
 .container {
   margin-left: auto;
@@ -49,14 +44,10 @@ img {
   padding-left: 0;
 }
 
-.flex {
-    display: flex;
-}
-
 @media screen and (max-width: 480px) {
   .container {
+    // max-width: 440px;
     max-width: 480px;
-    // width: 480px;
     padding: 0 20px;
   }
 }

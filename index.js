@@ -27,7 +27,7 @@ const menuItems = document.querySelectorAll('.nav__item-mobile');
 
 menuBtn.addEventListener('click', () => {
     const menuList = document.querySelector('.nav__list-mobile');
-    menuList.classList.toggle('is-visible');
+    menuList.classList.toggle('is-hidden');
     menuBtn.classList.toggle('active');
 });
 
@@ -37,7 +37,7 @@ menuList.addEventListener('click', (evt) => {
     if (evt.currentTarget === evt.target) {
         return
     }
-    menuList.classList.toggle('is-visible');
+    menuList.classList.toggle('is-hidden');
     menuBtn.classList.toggle('active');
     console.log(menuList);
 }

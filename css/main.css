@@ -1062,4 +1062,78 @@ address {
 .lastline__logo {
   margin-left: auto;
   margin-right: auto;
+}
+
+.callback__logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1170px) {
+  .callback__logo {
+    margin-top: 40px;
+  }
+}
+
+.callback__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+@media screen and (min-width: 1170px) {
+  .callback__img {
+    margin-top: 124px;
+  }
+}
+
+.callback__text {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+  text-align: center;
+}
+@media screen and (min-width: 1170px) {
+  .callback__text {
+    font-size: 58px;
+  }
+}
+
+.callback__button {
+  max-width: 237px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  padding: 12px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 10px 30px rgba(255, 111, 65, 0.5);
+  border-radius: 200px;
+  font-family: var(--secondary-font-family);
+  font-weight: 600;
+  font-size: 19px;
+  color: var(--container-color);
+}
+@media screen and (min-width: 1170px) {
+  .callback__button {
+    margin-bottom: 164px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .callback__contacts {
+    display: block;
+    text-align: end;
+  }
+}
+
+.callback__contacts p {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
